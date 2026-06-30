@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Character Counter</title>
+</head>
+<body>
+
+    <h2>Character Counter</h2>
+
+    <textarea id="textArea" rows="5" cols="30" onkeyup="countChars()"></textarea>
+
+    <p>Characters: <span id="count">0</span></p>
+
+    <script>
+        function countChars() {
+            let text = document.getElementById("textArea").value;
+            document.getElementById("count").textContent = text.length;
+        }
+    </script>
+
+</body>
+</html>

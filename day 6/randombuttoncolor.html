@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            button{
+                height:50px;
+                width:100px;
+                margin:200px;
+                border-radius:1px;
+                font-style: italic;
+            }
+        </style>
+    </head>
+<body>
+
+<button id="btn">Hover Me</button>
+
+<script>
+const btn = document.getElementById("btn");
+
+btn.addEventListener("mouseover", function() {
+    let randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+    btn.style.backgroundColor = randomColor;
+});
+</script>
+
+</body>
+</html>

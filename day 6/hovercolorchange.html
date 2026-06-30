@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hover Color Change</title>
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 50px;
+            border-radius:30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="box"></div>
+
+    <script>
+        let box = document.getElementById("box");
+
+        box.addEventListener("mouseenter", function() {
+            box.style.backgroundColor = "pink";
+        });
+
+        box.addEventListener("mouseleave", function() {
+            box.style.backgroundColor = "lightblue";
+        });
+    </script>
+
+</body>
+</html>

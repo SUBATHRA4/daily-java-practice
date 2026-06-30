@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<img id="slider" width="400" height="250">
+
+<script>
+const images = [
+    "https://picsum.photos/id/1015/400/250",
+    "https://picsum.photos/id/1016/400/250",
+    "https://picsum.photos/id/1018/400/250",
+    "https://picsum.photos/id/1020/400/250",
+    "https://picsum.photos/id/1024/400/250"
+];
+
+let index = 0;
+const slider = document.getElementById("slider");
+
+slider.src = images[index];
+
+setInterval(() => {
+    index = (index + 1) % images.length;
+    slider.src = images[index];
+}, 3000);
+</script>
+
+</body>
+</html>
